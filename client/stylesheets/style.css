@@ -1,0 +1,65 @@
+#home
+{
+  padding-left: 3px;
+}
+
+body
+{
+  background-color: black;
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  text-align: center;
+}
+
+textarea
+{
+  width: 800px;
+  height: 20em;
+}
+
+.box-table
+{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0px auto;
+  width: 50%;
+}
+
+.box-table th
+{
+  font-size: 13px;
+  font-weight: normal;
+  padding: 8px;
+  background: black;
+  border-top: 4px solid #aabcfe;
+  border-bottom: 1px solid #fff;
+  color: white;
+}
+
+.box-table td
+{
+  padding: 8px;
+  background: black;
+  border-bottom: 1px solid #fff;
+  color: white;
+  border-top: 1px solid transparent;
+}
+
+
+.wrapper
+{
+  overflow: auto;
+}
+
+.first
+{
+  float:left;
+  width:50%;
+}
+
+.second
+{
+  float:left;
+}

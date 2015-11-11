@@ -1,0 +1,25 @@
+<template name="committee_details">
+    <body>
+        <h1>{{committee}}</h1>
+        <table class="box-table">
+            <tr>
+                <td>Name</td>
+                <td>Killed By</td>
+                <td>Alive</td>
+                <td>Kills</td>
+            </tr>
+            {{#each members}}
+                <tr>
+                    {{> member_details}}
+                </tr>
+            {{/each}}
+        </table>
+    </body>
+</template>
+
+<template name="member_details">
+    <td>{{name}}</td>
+    <td>{{killedby}}</td>
+    <td>{{alive}}</td>
+    <td>{{kills}}</td>
+</template>

@@ -1,0 +1,28 @@
+<template name="kills">
+    <body>
+        <h1>Kills</h1>
+        <table class="box-table">
+            <tr>
+                <td>Killer</td>
+                <td>Committee</td>
+                <td>Killed</td>
+                <td>Committee</td>
+                <td>Story</td>
+            </tr>
+            {{#each kills}}
+                <tr>
+                  {{> kill}}
+                </tr>
+            {{/each}}
+        </table>
+    </body>
+</template>
+
+
+<template name="kill">
+    <td>{{killer}}</td>
+    <td>{{killer_committee}}</td>
+    <td>{{killed}}</td>
+    <td>{{killed_committee}}</td>
+    <td>{{story}}</td>
+</template>

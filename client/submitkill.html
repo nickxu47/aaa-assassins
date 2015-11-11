@@ -1,0 +1,29 @@
+<template name="submitkill">
+    <div>
+        <h1>Submit Kill</h1>
+        <form id="new-kill">
+            <input type="text" name="killer" placeholder="Killer" />
+            <select name="killer_committee">
+                <option value="Committee">Committee</option>
+                <option value="Community Service">Community Service</option>
+                <option value="Development">Development</option>
+                <option value="Historian">Historian</option>
+                <option value="Internal Relations">Internal Relations</option>
+                <option value="Issues">Issues</option>
+                <option value="Social">Social</option>
+            </select>
+            <input type="text" name="killed" placeholder="Killed" />
+            <select name="killed_committee">
+                <option value="Committee">Committee</option>
+                <option value="Community Service">Community Service</option>
+                <option value="Development">Development</option>
+                <option value="Historian">Historian</option>
+                <option value="Internal Relations">Internal Relations</option>
+                <option value="Issues">Issues</option>
+                <option value="Social">Social</option>
+            </select>
+            <input type="submit" value="Submit Kill">
+        </form>
+        <textarea name="story" form="new-kill" placeholder="Story"></textarea>
+    </div>
+</template>

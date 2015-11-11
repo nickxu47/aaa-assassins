@@ -1,0 +1,32 @@
+<template name="committees">
+    <body>
+        <h1>Committees</h1>
+        <table class="box-table">
+            <tr>
+                <td>Name</td>
+                <td>Members</td>
+                <td>Dead</td>
+                <td>Kills</td>
+                <td>Dead %</td>
+                <td>KPD</td>
+                <td>Details</td>
+            </tr>
+            {{#each committees}}
+                <tr>
+                  {{> committee_stats}}
+                </tr>
+            {{/each}}
+        </table>
+    </body>
+</template>
+
+
+<template name="committee_stats">
+      <td>{{committee_name}}</td>
+      <td>{{num_members}}</td>
+      <td>{{num_dead}}</td>
+      <td>{{kills}}</td>
+      <td>{{dead_percent num_dead num_members}}</td>
+      <td>{{kills_per_death kills num_dead}}</td>
+      <td><a href="{{pathFor route='committee_details'}}">Details</a></td>
+</template>

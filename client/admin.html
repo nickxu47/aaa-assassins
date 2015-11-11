@@ -1,0 +1,57 @@
+<template name="admin">
+    <body>
+        <h1>Verify Kills</h1>
+        <table class="box-table">
+            <tr>
+                <td>Killer</td>
+                <td>Committee</td>
+                <td>Killed</td>
+                <td>Committee</td>
+                <td>Story</td>
+                <td>Accept Kill</td>
+                <td>Reject Kill</td>
+            </tr>
+            {{#each verifykills}}
+                <tr>
+                  {{> adminkill}}
+                </tr>
+            {{/each}}
+        </table>
+        <h1>Remove Kills</h1>
+        <table class="box-table">
+            <tr>
+                <td>Killer</td>
+                <td>Committee</td>
+                <td>Killed</td>
+                <td>Committee</td>
+                <td>Story</td>
+                <td>Remove Kill</td>
+            </tr>
+            {{#each kills}}
+                <tr>
+                  {{> removekill}}
+                </tr>
+            {{/each}}
+        </table>
+    </body>
+</template>
+
+
+<template name="adminkill">
+    <td>{{killer}}</td>
+    <td>{{killer_committee}}</td>
+    <td>{{killed}}</td>
+    <td>{{killed_committee}}</td>
+    <td>{{story}}</td>
+    <td><button id="accept">Accept</button></td>
+    <td><button id="reject">Reject</button></td>
+</template>
+
+<template name="removekill">
+    <td>{{killer}}</td>
+    <td>{{killer_committee}}</td>
+    <td>{{killed}}</td>
+    <td>{{killed_committee}}</td>
+    <td>{{story}}</td>
+    <td><button id="remove">Remove</button></td>
+</template>

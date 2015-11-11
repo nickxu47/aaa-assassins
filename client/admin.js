@@ -17,7 +17,10 @@ Template.admin.events({
     "click #remove": function () {
         Meteor.call("removekill", this)
     },
-    "click #reset": function() {
-        Meteor.call("resetEverything")
+    "click #resetkills": function() {
+        Meteor.call("resetKills")
+    },
+    "click #resetcommittees": function() {
+        Meteor.call("resetCommittees")
     }
 });

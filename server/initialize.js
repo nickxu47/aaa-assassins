@@ -37,7 +37,7 @@ Meteor.methods({
             },
             {
                 committee_name: "Internal Relations",
-                num_members: 6,
+                num_members: 7,
                 num_dead: 0,
                 kills: 0,
                 members: [
@@ -46,7 +46,8 @@ Meteor.methods({
                     {name: "Jihoon Park", killedby: "", alive: "yes", kills: 0},
                     {name: "Kelly Zhao", killedby: "", alive: "yes", kills: 0},
                     {name: "Sam Paul", killedby: "", alive: "yes", kills: 0},
-                    {name: "Shirley Guan", killedby: "", alive: "yes", kills: 0}
+                    {name: "Shirley Guan", killedby: "", alive: "yes", kills: 0},
+                    {name: "Carol Wu", killedby: "", alive: "yes", kills: 0}
                 ]
             },
             {
@@ -106,6 +107,8 @@ Meteor.methods({
         ];
         Committees.remove({})
         _.each( initialCommittees, function ( committee ) { Committees.insert( committee ); });
+    },
+    resetKills: function() {
         Kills.remove({})
     },
 });

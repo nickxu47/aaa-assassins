@@ -33,6 +33,7 @@
                 </tr>
             {{/each}}
         </table>
+        {{> reset}}
     </body>
 </template>
 
@@ -54,4 +55,9 @@
     <td>{{killed_committee}}</td>
     <td>{{story}}</td>
     <td><button id="remove">Remove</button></td>
+</template>
+
+<template name="reset">
+    <button id="resetkills">Reset Kills</button>
+    <button id="resetcommittees">Reset Committees</button>
 </template>

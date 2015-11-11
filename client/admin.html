@@ -1,39 +1,42 @@
 <template name="admin">
     <body>
-        <h1>Verify Kills</h1>
-        <table class="box-table">
-            <tr>
-                <td>Killer</td>
-                <td>Committee</td>
-                <td>Killed</td>
-                <td>Committee</td>
-                <td>Story</td>
-                <td>Accept Kill</td>
-                <td>Reject Kill</td>
-            </tr>
-            {{#each verifykills}}
+        {{> loginButtons}}
+        {{#if currentUser}}
+            <h1>Verify Kills</h1>
+            <table class="box-table">
                 <tr>
-                  {{> adminkill}}
+                    <td>Killer</td>
+                    <td>Committee</td>
+                    <td>Killed</td>
+                    <td>Committee</td>
+                    <td>Story</td>
+                    <td>Accept Kill</td>
+                    <td>Reject Kill</td>
                 </tr>
-            {{/each}}
-        </table>
-        <h1>Remove Kills</h1>
-        <table class="box-table">
-            <tr>
-                <td>Killer</td>
-                <td>Committee</td>
-                <td>Killed</td>
-                <td>Committee</td>
-                <td>Story</td>
-                <td>Remove Kill</td>
-            </tr>
-            {{#each kills}}
+                {{#each verifykills}}
+                    <tr>
+                      {{> adminkill}}
+                    </tr>
+                {{/each}}
+            </table>
+            <h1>Remove Kills</h1>
+            <table class="box-table">
                 <tr>
-                  {{> removekill}}
+                    <td>Killer</td>
+                    <td>Committee</td>
+                    <td>Killed</td>
+                    <td>Committee</td>
+                    <td>Story</td>
+                    <td>Remove Kill</td>
                 </tr>
-            {{/each}}
-        </table>
-        {{> reset}}
+                {{#each kills}}
+                    <tr>
+                      {{> removekill}}
+                    </tr>
+                {{/each}}
+            </table>
+            {{> reset}}
+        {{/if}}
     </body>
 </template>
 

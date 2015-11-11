@@ -8,7 +8,7 @@ Router.route('/', function(){
   name: 'home'
 });
 
-Router.route('/admin_please_dont_touch', function() {
+Router.route('/admin', function() {
   this.render('admin');
 }, {
   name: 'admin'

@@ -60,7 +60,7 @@ Meteor.methods({
                     {name: "Jasper Loo", killedby: "", alive: "yes", kills: 0},
                     {name: "Karen Kuang", killedby: "", alive: "yes", kills: 0},
                     {name: "Litzy Yang", killedby: "", alive: "yes", kills: 0},
-                    {name: "Jason Ai", killedby: "", alive: "yes", kills: 0},
+                    {name: "Ryan Hoang", killedby: "", alive: "yes", kills: 0},
                     {name: "Qizhuang Huang", killedby: "", alive: "yes", kills: 0},
                     {name: "Sophia Li", killedby: "", alive: "yes", kills: 0},
                     {name: "Wendy Ooi", killedby: "", alive: "yes", kills: 0},
